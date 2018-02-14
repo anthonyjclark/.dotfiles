@@ -3,8 +3,18 @@
         create: true
         relink: true
 
-- clean: ['~', '~/.config']
+
+- shell:
+    - [sh setup-shell.sh, Setting up ZSH and oh-my-zsh]
+
+
+- clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/']
+
 
 - link:
     ~/.tmux.conf:
+    ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: zsh/themes/sobole-zsh-theme/sobole.zsh-theme
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh/themes/zsh-syntax-highlighting/
+    ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search: zsh/themes/zsh-history-substring-search/
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh/themes/zsh-autosuggestions/
 
