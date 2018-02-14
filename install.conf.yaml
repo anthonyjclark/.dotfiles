@@ -5,7 +5,8 @@
 
 
 - shell:
-    - [sh setup-shell.sh, Setting up ZSH and oh-my-zsh]
+    - [bash setup-shell.bash, Setting up ZSH and oh-my-zsh]
+    - [git submodule update --init --recursive, Installing submodules]
 
 
 - clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/']
@@ -13,8 +14,9 @@
 
 - link:
     ~/.tmux.conf:
+    ~/.zshrc: zsh/zshrc
     ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: zsh/themes/sobole-zsh-theme/sobole.zsh-theme
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh/themes/zsh-syntax-highlighting/
-    ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search: zsh/themes/zsh-history-substring-search/
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh/themes/zsh-autosuggestions/
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh/plugins/zsh-syntax-highlighting/
+    ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search: zsh/plugins/zsh-history-substring-search/
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh/plugins/zsh-autosuggestions/
 
