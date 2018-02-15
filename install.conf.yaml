@@ -6,8 +6,9 @@
 
 - shell:
     - [bash setup-shell.bash, Setting up ZSH and oh-my-zsh]
+    - [bash setup-vim.bash, Installing amix/vimrc]
     - [git submodule update --init --recursive, Installing submodules]
-    - [git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sh ~/.vim_runtime/install_awesome_vimrc.sh, Installing amix/vimrc]
+
 
 - clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/']
 
