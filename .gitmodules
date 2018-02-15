@@ -14,5 +14,5 @@
 	path = zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "vim/vimrc"]
-	path = vim/vimrc
+	path = vim/vim_runtime
 	url = https://github.com/amix/vimrc.git
