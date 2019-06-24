@@ -9,3 +9,5 @@ git commit -am "Updating Dotbot."
 
 
 
+Things to do:
+- https://github.com/sindresorhus/pure
